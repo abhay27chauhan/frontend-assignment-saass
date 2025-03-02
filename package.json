@@ -4,7 +4,8 @@
   "description": "frontend assignment for saas labs",
   "main": "index.js",
   "scripts": {
-    "start": "webpack && nodemon server.js",
+    "start": "node server.js",
+    "dev": "webpack && nodemon server.js",
     "watch": "webpack --watch --progress",
     "test": "jest",
     "build": "webpack --mode production"
