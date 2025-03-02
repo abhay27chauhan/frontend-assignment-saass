@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack && nodemon server.js",
     "watch": "webpack --watch --progress",
-    "test": "jest"
+    "test": "jest",
+    "build": "webpack --mode production"
   },
   "author": "abhay chauhan",
   "license": "ISC",

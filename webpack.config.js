@@ -33,7 +33,7 @@ var browserConfig = {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
   mode: PROD ? 'production' : 'development',
-  devtool: 'eval-source-map',
+  devtool: PROD ? 'hidden-source-map' : 'eval-source-map',
   plugins: [
     new webpack.DefinePlugin({
       __isBrowser__: "true"
